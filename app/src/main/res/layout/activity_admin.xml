@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2ecb6"
+    tools:context=".RegisterActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/SignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#7090e9"
+        android:text="Sign Out"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Products:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Name:"
+        app:layout_constraintStart_toStartOf="@+id/ProductSize"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:text="test"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/ProductSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Size:"
+        app:layout_constraintStart_toStartOf="@+id/ProductWeight"
+        app:layout_constraintTop_toBottomOf="@+id/ProductName" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="1*1"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/ProductWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="37dp"
+        android:text="Weight:"
+        app:layout_constraintStart_toEndOf="@+id/Previous"
+        app:layout_constraintTop_toBottomOf="@+id/ProductSize" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="1 kg"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/ProductType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="158dp"
+        android:text="Type:"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/Previous"
+        app:layout_constraintTop_toBottomOf="@+id/ProductWeight" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="36dp"
+        android:text="Electronics"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/Next"
+        app:layout_constraintStart_toEndOf="@+id/ProductType" />
+
+    <TextView
+        android:id="@+id/SpeceficContentProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Specefic:"
+        app:layout_constraintStart_toEndOf="@+id/Previous"
+        app:layout_constraintTop_toBottomOf="@+id/Previous" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="54dp"
+        android:text="2 Year Waranty"
+        app:layout_constraintBottom_toBottomOf="@+id/DescriptionProduct"
+        app:layout_constraintEnd_toEndOf="@+id/Next"
+        app:layout_constraintTop_toTopOf="@+id/ProductType" />
+
+    <TextView
+        android:id="@+id/DescriptionProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Description:"
+        app:layout_constraintStart_toStartOf="@+id/SpeceficContentProduct"
+        app:layout_constraintTop_toBottomOf="@+id/SpeceficContentProduct" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:text="New Product"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/Minus"
+        app:layout_constraintTop_toTopOf="@+id/Minus" />
+
+    <Button
+        android:id="@+id/Minus"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginBottom="208dp"
+        android:text="-"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/DescriptionProduct"
+        app:layout_constraintTop_toBottomOf="@+id/ProductWeight" />
+
+    <Button
+        android:id="@+id/Plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="+"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Minus"
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/Previous"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="10dp"
+        android:text="Pre"
+        app:layout_constraintBottom_toBottomOf="@+id/ProductType"
+        app:layout_constraintEnd_toStartOf="@+id/ProductType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductType" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/AddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Add Product"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif"
+
+        android:textColor="#ff0606"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/AddProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+</android.support.constraint.ConstraintLayout>
